@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     
+    <style>
+    
+        #title{
+            text-align: center;
+            color: rgb(154, 20, 31);
+            font-size: 2cm;
+           
+        }
+        #description{
+            text-align: center;
+            font-size: 1cm;
+        }
+        #name,#email{
+            width: 7cm;
+            padding: 5px;
+            
+        }
+        #number{
+            width: 8cm;
+            padding: 5px;
+        }
+        select{
+            width:5cm;
+            padding: 4px;
+        }
+        #submit{
+            width: 8cm;
+            background-color: brown;
+            color: aliceblue;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            margin-left: 40%;
+
+        }
+        textarea{
+            
+            width: 100%;
+        }
+        .block{
+            display: block;
+        width: 100vh;
+        
+        margin-left: 25%;
+        }
+        ul{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        li{
+            display: inline-block;
+            padding: 5px;
+            margin: 10px;
+           
+        }
+        img{
+            width: 200px;
+            margin-left: 40%;
+        }
+        @media screen and (max-width:650px) {
+            .block{
+                margin-left: 0%;
+            }
+            img{
+            width: 150px;
+            margin-left: 37%;
+        }
+
+        #title{
+            text-align: center;
+            color: rgb(154, 20, 31);
+            font-size: 20px;
+           
+        }
+        #description{
+            text-align: center;
+            font-size: 16px;
+        }
+        #name,#email{
+            width: 4.5cm;
+            padding: 5px;
+            
+        }
+        #number{
+            width: 4cm;
+            padding: 5px;
+        }
+        select{
+            width:4cm;
+            padding: 4px;
+        }
+        #submit{
+            width: 8cm;
+            background-color: brown;
+            color: aliceblue;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            margin-left: 10%;
+
+        }
+        textarea{
+            margin-left: 0%;
+            width: 70%;
+        }
+        font{
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://raw.githubusercontent.com/Tolash123/hosted-assets/main/logo.png" alt="bank">
+    <h1 id="title">TOLASH COMPANY</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <p id="description">Self Assessment Survey</p>
+    <div class="block">
+    <form action="" id="survey-form">
+<label for="name" id="name-label">Name:</label>
+<input type="text"  id="name" value="name" placeholder="Enter your name" required>
+      <label for="email" id="email-label">Email:</label>
+<input type="email" value="email" placeholder="Enter your email" id="email" required> <br> <br>
+      <label for="number" id="number-label">Contact:</label>
+<input type="number" placeholder="Enter your number" value="number" id="number" min="0" max="50">
+      
+      
+Nationality: <select id="dropdown">
+    <option name="" id="">country</option>
+    <option name="" id="">Angola</option>
+    <option name="" id="">Ethiopia</option>
+    <option name="" id="">Nigeria</option>
+</select>
+<hr style="margin: 8px 0px;">
+<p>Please select the following skills you have</p>
+<div class="font">
+<input type="checkbox" id="skill1" name="skill1" value="communication">
+  <label for="skill1">Technical </label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Creative & Design </label>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Communication</label> 
+ <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+  <label for="vehicle4"> Organizational</label>
+  </div>
+  <hr style="margin: 8px 0px;">
+  <p>How would rate your Technical skill?</p>
+      
+              
+  <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="american-cartoons-radio" name="genre-radio"  class="custom-control-input" value="American Cartoons" required>
+          <label class="custom-control-label" for="american-cartoons-radio">Excellent</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="video-game-dev-radio" name="genre-radio"  class="custom-control-input" value="Video Game Development" required>
+          <label class="custom-control-label" for="video-game-dev-radio">Very good</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="anime-radio" name="genre-radio"  class="custom-control-input" value="Anime (Japanese Cartoons)" required>
+          <label class="custom-control-label" for="anime-radio">Good</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="none-radio" name="genre-radio"  class="custom-control-input" value="None of these genres" required>
+          <label class="custom-control-label" for="none-radio">Pass</label>
+        </div>
+
+<p>How would rate your creative & designs skill?</p>
+
+        
+  <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="american-cartoons-radio" name="genre-radio"  class="custom-control-input" value="American Cartoons" required>
+          <label class="custom-control-label" for="american-cartoons-radio">Excellent</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="video-game-dev-radio" name="genre-radio"  class="custom-control-input" value="Video Game Development" required>
+          <label class="custom-control-label" for="video-game-dev-radio">Very good</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="anime-radio" name="genre-radio"  class="custom-control-input" value="Anime (Japanese Cartoons)" required>
+          <label class="custom-control-label" for="anime-radio">Good</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="none-radio" name="genre-radio"  class="custom-control-input" value="None of these genres" required>
+          <label class="custom-control-label" for="none-radio">Pass</label>
+        </div>
+
+      
+      <p>How would rate your communication skill?</p>
+      
+              
+        <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="american-cartoons-radio" name="genre-radio"  class="custom-control-input" value="American Cartoons" required>
+                <label class="custom-control-label" for="american-cartoons-radio">Excellent</label>
+              </div>
+      
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="video-game-dev-radio" name="genre-radio"  class="custom-control-input" value="Video Game Development" required>
+                <label class="custom-control-label" for="video-game-dev-radio">Very good</label>
+              </div>
+      
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="anime-radio" name="genre-radio"  class="custom-control-input" value="Anime (Japanese Cartoons)" required>
+                <label class="custom-control-label" for="anime-radio">Good</label>
+              </div>
+      
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="none-radio" name="genre-radio"  class="custom-control-input" value="None of these genres" required>
+                <label class="custom-control-label" for="none-radio">Pass</label>
+              </div>
+              <p>How would you rate your organizational  skill?</p>
+      
+              
+              <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="american-cartoons-radio" name="genre-radio"  class="custom-control-input" value="American Cartoons" required>
+                      <label class="custom-control-label" for="american-cartoons-radio">Excellent</label>
+                    </div>
+            
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="video-game-dev-radio" name="genre-radio"  class="custom-control-input" value="Video Game Development" required>
+                      <label class="custom-control-label" for="video-game-dev-radio">Very good</label>
+                    </div>
+            
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="anime-radio" name="genre-radio"  class="custom-control-input" value="Anime (Japanese Cartoons)" required>
+                      <label class="custom-control-label" for="anime-radio">Good</label>
+                    </div>
+            
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="none-radio" name="genre-radio"  class="custom-control-input" value="None of these genres" required>
+                      <label class="custom-control-label" for="none-radio">Pass</label>
+                    </div>
+            
+
+            
+<textarea name="" id="" cols="15" rows="6" style="margin-top: 5px;"></textarea>
+  <br> <button id="submit" href="">Submit</button>
+</form>
+</div>
+</body>
+</html>
